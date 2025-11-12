@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: chatbot
+    env: python
+    buildCommand: ""
+    startCommand: "streamlit run chatbot.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        value: "your_openai_api_key_here"
+      - key: HF_TOKEN
+        value: "your_huggingface_token_here"
